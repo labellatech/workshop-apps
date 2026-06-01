@@ -12,8 +12,8 @@ commonLabels:
 
 images:
   - name: pos-app
-    newName: asia-southeast1-docker.pkg.dev/YOUR_GCP_PROJECT/YOUR_REPO/pos-app
-    newTag: latest
+    newName: ghcr.io/zawthanoo/pos-app
+    newTag: 1.0.0-8-07fb7e
 
 replicas:
   - name: pos-app

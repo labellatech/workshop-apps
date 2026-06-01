@@ -11,8 +11,8 @@ commonLabels:
 
 images:
   - name: order-service
-    newName: asia-southeast1-docker.pkg.dev/YOUR_GCP_PROJECT/YOUR_REPO/order-service
-    newTag: latest
+    newName: ghcr.io/zawthanoo/order-service
+    newTag: 1.0.0-8-07fb7e
 
 replicas:
   - name: order-service
