@@ -24,20 +24,20 @@ spec:
                 name: inventory-service-secret
           resources:
             requests:
-              cpu: 100m
-              memory: 128Mi
+              cpu: 200m
+              memory: 256Mi
             limits:
               cpu: 500m
-              memory: 256Mi
+              memory: 512Mi
           readinessProbe:
             httpGet:
               path: /api/products
               port: 3002
-            initialDelaySeconds: 10
-            periodSeconds: 5
+            initialDelaySeconds: 30
+            periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /api/products
               port: 3002
-            initialDelaySeconds: 15
-            periodSeconds: 10
+            initialDelaySeconds: 45
+            periodSeconds: 15
